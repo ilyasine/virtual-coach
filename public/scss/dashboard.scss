@@ -1,0 +1,29 @@
+@import "variables";
+@import "mixins";
+@import "animations";
+@import "content";
+@import "sidebar";
+@import "hero";
+@import "content";
+@import "coaching-sessions-popup";
+
+.flex {
+    @include flexbox();
+}
+
+.block {
+    display: block;
+    @include center();
+}
+
+.wrp {
+    width: 90% !important;
+  }
+.bspr {
+    height: 25px !important;
+}
+.cnt {
+    .awr {
+        padding: 10px !important;
+    }
+}

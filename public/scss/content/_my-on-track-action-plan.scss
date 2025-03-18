@@ -1,0 +1,31 @@
+.vc-my-on-track-action-plan {
+    .vc-section-content-body {
+        padding: 0 10px 0 5px !important;
+    }
+}
+
+#add-new-otap {
+    .vc-popup-container {
+        .vc-popup-content {
+            ul {
+                &:before {
+                    width: 300px;
+                    margin-left: -150px;
+                }
+            }
+        }
+    }
+}
+
+#edit-otap {
+    .vc-popup-container {
+        .vc-popup-content {
+            ul {
+                &:before {
+                    width: 300px;
+                    margin-left: -150px;
+                }
+            }
+        }
+    }
+}

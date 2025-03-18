@@ -1,0 +1,47 @@
+.virtual-coach-sidebar {
+    flex: 1;
+    background-color: $vc-white;
+    border: 2px solid $vc-dark-white;
+    border-radius: 18px 0 0 18px;
+
+    .vc-sidebar-header {
+        padding: 20px;
+    }
+
+    .vc-sidebar-menu {
+        padding: 20px;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                color: $vc-text-dark-grey;
+                padding: 15px 30px;
+                border: 1px solid $vc-blue-border;
+                border-radius: 12px;
+                cursor: pointer;
+                text-align: center;
+                transition: all 0.3s;
+
+                &:is(:hover, :active, :focus, .active) {
+                    color: $vc-white;
+                    background-color: $vc-primary-color;
+                }
+
+                &[data-id="my-stuff"]{
+                    border: none;
+                    color: black;
+                    font-weight: 800;
+                    font-size: 20px;
+                }
+
+            }
+
+            &:last-child {
+                margin-top: 60px;
+            }
+        }
+    }
+}

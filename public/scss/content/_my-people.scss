@@ -1,0 +1,154 @@
+.vc-my-people {
+    .vc-section-content-header {
+        .vc-sch-text {
+            line-height: 42px;
+        }
+    }
+    .vc-section-content-body {
+        background-color: transparent !important;
+        margin-top: 0 !important;
+        padding: 0 !important;
+        border-radius: 0 !important;
+    }
+}
+.vc-mp-bloc {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    .vc-mp-side-bloc {
+        flex-grow: 1;
+        background-color: #ffffff;
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 18px;
+        .vc-mp-sb-people {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid $vc-blue-border;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s;
+            &:hover {
+                color: $vc-primary-color;
+                border: 1px solid $vc-primary-color;
+            }
+            &.active {
+                color: $vc-primary-color;
+                border: 1px solid $vc-primary-color;
+            }
+            .vc-mp-sb-people-image {
+                display: inline-flex;
+                img {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                }
+            }
+            .vc-mp-sb-people-text {
+                .vc-mp-sb-people-text-top {
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+                .vc-mp-sb-people-text-bottom {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .vc-mp-main-bloc {
+        flex-grow: 8;
+        background-color: #ffffff;
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 18px;
+    }
+}
+.vc-mp-mb-avatar {
+    text-align: center;
+    margin-bottom: 20px;
+    .vc-mp-mb-avatar-image {
+        img {
+            width: 95px;
+            height: 95px;
+            border-radius: 50%;
+        }
+        label {
+            display: block;
+            position: relative;
+            width: 95px;
+            height: 95px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px solid $vc-blue-border;
+            border-radius: 50%;
+            i {
+                position: absolute;
+                color: $vc-grey;
+                background-color: $vc-white;
+                font-size: 32px;
+                width: 36px;
+                height: 36px;
+                line-height: 36px;
+                text-align: center;
+                left: 50%;
+                bottom: -18px;
+                margin-left: -18px;
+                border: 2px solid $vc-blue-border;
+                border-radius: 50%;
+                cursor: pointer;
+                z-index: 9;
+                &::before {
+                    margin: 0;
+                }
+            }
+            input {
+                position: absolute;
+                width: 95px;
+                height: 95px;
+                left: 0;
+                top: 0;
+                border-radius: 50%;
+                opacity: 0;
+                z-index: 9;
+                cursor: pointer;
+            }
+            img {
+                position: absolute;
+                object-fit: cover;
+                left: 0;
+                top: 0;
+                border-radius: 50%;
+            }
+        }
+    }
+    .vc-mp-mb-avatar-text {
+        .vc-mp-mb-avatar-text-top {
+            font-weight: 700;
+        }
+        .vc-mp-mb-avatar-text-bottom {
+            font-size: 12px;
+            color: $vc-primary-color;
+        }
+    }
+}
+
+#add-new-people {
+    .vc-popup-container {
+        .vc-new-people-popup-head {
+            margin: -20px;
+            padding: 20px;
+            border-bottom: 1px solid $vc-blue-border;
+            .vc-npp-title {
+                text-align: left;
+                font-size: 24px;
+                font-weight: 700;
+            }
+        }
+        .new-people-popup-content {
+            margin-top: 40px;
+        }
+    }
+}

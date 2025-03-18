@@ -1,0 +1,68 @@
+.vc-my-clear-picture {
+    display: block;
+    .vc-section-content-body {
+        background-color: transparent !important;
+        .vc-mcp-row {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;           
+            .vc-mcp-bloc {
+                display: flex;
+                background: #fff;
+                width: 100%;
+                gap: 10px;
+                align-items: center;
+                margin-bottom: 15px;
+                padding: 10px;
+                border-radius: 8px;
+                border: 1px solid $vc-blue-border;
+                .vc-mcp-bloc-image {
+                    flex: 1;
+                    text-align: center;
+                    img {
+                        width: 120px;
+                        height: auto;
+                        margin-right: 10px;
+                        border-radius: 8px;
+                    }
+                }
+                .vc-mcp-bloc-content {
+                    flex: 2;
+                    .vc-mcp-bloc-title {
+                        position: relative;
+                        font-size: 18px;
+                        font-weight: 700;
+                        margin-bottom: 10px;
+                        background-color: #fff;
+                    }
+                    .vc-mcp-bloc-text {
+                        position: relative;
+                        font-size: 14px;
+                        color: $vc-text-dark-grey;
+                        background-color: $vc-white;
+                        margin-bottom: 10px;
+                        padding: 6px 12px;
+                        border: 1px solid $vc-text-dark-grey;
+                        border-radius: 8px;
+                        cursor: pointer;
+                        transition: all 0.3s;
+                        &:hover {
+                            color: $vc-white;
+                            background-color: $vc-text-dark-grey;
+                            /* i {
+                                color: $vc-white;
+                                &:hover {
+                                    color: $vc-primary-color;
+                                }
+                            } */
+                        }
+                        i.speak{
+                            position: absolute;
+                            top: -70px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.vc-my-skills-posters {
+    .vc-section-content-header {
+        .vc-sch-text {
+            line-height: 42px;
+        }
+    }
+    .vc-section-content-body {
+        .vc-masonry-bloc {
+            column-count: 4;
+            column-gap: 10px;
+            .vc-masonry-bloc-img {
+                margin: 0;
+                display: grid;
+                grid-template-rows: 1fr auto;
+                margin-bottom: 10px;
+                break-inside: avoid;
+                img {
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+}

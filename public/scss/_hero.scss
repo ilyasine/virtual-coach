@@ -1,0 +1,91 @@
+.vc-coaching-session-hero {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    .vc-hero {
+        img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            background-color: $vc-blue-avatar;
+            border-radius: 50%;
+            box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ADEAFF, 0 0 0 8px #fff, 0 0 0 9px #ADEAFF;
+        }
+        // .vc-hero-desc
+        &-desc{
+            
+        }
+        &-name{
+            font-size: 18px;
+            font-weight: 700;
+            color: $vc-primary-color;
+            margin-bottom: 10px; 
+        }
+        &-text{
+            margin-bottom: 15px;
+        }
+        &-button {
+            display: inline-block;
+            color: $vc-white;
+            background-color: $vc-primary-color;
+            padding: 10px 20px;
+            border: 1px solid $vc-blue-border;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s;
+            &:hover {
+                color: $vc-white;
+                background-color: $vc-dark-blue;
+            }
+        }
+        &-buttons-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+    }
+    .vc-hero-desc {
+        .vc-hero-name {
+            font-size: 18px;
+            font-weight: 700;
+            color: $vc-primary-color;
+            margin-bottom: 10px;
+        }
+        .vc-hero-text {
+            margin-bottom: 15px;
+        }
+        .vc-hero-button {
+            display: inline-block;
+            color: $vc-white;
+            background-color: $vc-primary-color;
+            padding: 10px 20px;
+            border: 1px solid $vc-blue-border;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s;
+            &:hover {
+                color: $vc-white;
+                background-color: $vc-dark-blue;
+            }
+        }
+    }
+    /* .vc-costum-avatar-button {
+        display: inline-block;
+        position: absolute;
+        font-size: 12px;
+        top: -10px;
+        right: -10px;
+        color: $vc-dark-border;
+        padding: 6px 12px;
+        border: 1px solid $vc-dark-border;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+            color: $vc-white;
+            background-color: $vc-dark-border;
+        }
+    } */
+}
